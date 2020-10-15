@@ -1,5 +1,6 @@
 # A/B Testing
 
+[![Deploy](https://img.shields.io/badge/deploy-stable-brightgreen)](https://thawing-sea-35748.herokuapp.com)
 
 ## Overview
 

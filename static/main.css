@@ -9,7 +9,6 @@ header {
 }
 
 .vendor-wrapper {
-	justify-content: center;
 	width: 300px;
 	height: 400px;
 	padding-left: 40px;
@@ -21,15 +20,19 @@ header {
 	justify-content: center;
 	max-width: 300px;
 	max-height: 200px;
-	padding-right: 20px;
+  padding-right: 20px;
 }
 
 .vendor-book-button {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 .content-pane {
+  display: flex;
   padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa-stack[data-count]:after{

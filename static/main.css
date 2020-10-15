@@ -18,7 +18,7 @@ header {
 }
 
 .vendor-photo {
-	align-items: center;
+	justify-content: center;
 	max-width: 300px;
 	max-height: 200px;
 	padding-right: 20px;

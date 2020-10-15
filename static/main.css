@@ -10,8 +10,8 @@ header {
 
 .vendor-wrapper {
 	justify-content: center;
-	max-width: 300px;
-	max-height: 400px;
+	width: 300px;
+	height: 400px;
 	padding-left: 40px;
 	padding-top: 20px;
 	padding-bottom: 20px;

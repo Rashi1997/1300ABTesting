@@ -51,76 +51,80 @@
     <link rel="stylesheet" href="../static/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>cact-I + cact-you = cact-us</title>
+    <title>CACT-US B</title>
   </head>
 
   <body>
     <header>
-      <h1>cact-I + cact-you = cact-us</h1>
+      <h1 class="display-1 text-center">Welcome to CACT-US World!</h1>
       <!-- Ideas: making it pretty/look real, making it look reliable,
           choosing different images, changing layout, etc. Show your creativity!
           We want to see meaningful differences -->
       <!-- Feel free to beautify the site, and/or update the content-->
-      <i>An online succulent store
-        for your inner plant lady.
-      </i>
+      <h3 class="text-center"><i>Feel free to shop around!
+      </i></h3>
     </header>
-
+    <div id="cart-wrapper" class="d-flex justify-content-end pr-5 mr-5">
+      <a onclick='navigateToCheckout()'>
+      <span id="cart" class="fa-stack fa-2x has-badge" data-count="0">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
+      </span> <h4 class="text-primary"><u>CART</u></h4>
+    </a>
+    </div>
     <!-- If you add any new buttons, you need to update the javascript file, for
     corresponding button id, so that clicks of that button could be logged -->
-    <div class="content-pane">
+    <div class="content-pane d-flex flex-wrap align-items-center">
       <div class="vendor-wrapper" id="mp1">
-        <img src="../static/coppercombo.png" class="vendor-photo" />
-        <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">
+        <img src="../static/coppercombo.png" class="vendor-photo" /><br><br>
+        <h2>Stunning succulent combo, featuring 3 adolescent cacti in
+          industrial copper pots. 
+        </h2>
+        <i class="h3 text-danger">$9.99</i><br><br>
+        <button class="vendor-book-button btn btn-lg btn-primary" type="submit" id="mp1">
           Add To Cart
-        </button>
-        <span><span id="mp1-added">0</span> in cart</span>
-        <p>Stunning succulent combo, featuring 3 adolescent cacti in
-          industrial copper pots. <i>$9.99</i>
-        </p>
+        </button><br>
+        <span class="h4"><span id="mp1-added">0</span> in cart</span>
       </div>
 
       <div class="vendor-wrapper" id="mp2">
-        <img src="../static/geoprickly.jpg" class="vendor-photo" />
-        <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">
+        <img src="../static/geoprickly.jpg" class="vendor-photo" /><br><br>
+        <h2>Beautiful prickly pair in modern geometric pots. 
+        </h2>
+        <i class="h3 text-danger">$14.99</i><br><br>
+        <button class="vendor-book-button btn btn-lg btn-primary" type="submit" id="mp2">
           Add To Cart
-        </button>
-        <span><span id="mp2-added">0</span> in cart</span>
-        <p>Beautiful prickly pair in modern geometric pots. <i>$14.99</i>
-        </p>
+        </button><br>
+        <span class="h4"><span id="mp2-added">0</span> in cart</span>
       </div>
 
       <div class="vendor-wrapper" id="mp3">
-        <img src="../static/garden.jpg" class="vendor-photo" />
-        <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">
+        <img src="../static/garden.jpg" class="vendor-photo" /><br><br>
+        <h2>Cacti and succulent mini-garden in a congenial and rustic pot. 
+        </h2>
+        <i class="h3 text-danger">$25.99</i><br><br>
+        <button class="vendor-book-button btn btn-lg btn-primary" type="submit" id="mp3">
           Add To Cart
-        </button>
-        <span><span id="mp3-added">0</span> in cart</span>
-        <p>Cacti and succulent mini-garden in a congenial and rustic pot. <i>$25.99</i>
-        </p>
+        </button><br>
+        <span class="h4"><span id="mp3-added">0</span> in cart</span>
       </div>
 
       <div class="vendor-wrapper" id="mp4">
-        <img src="../static/garden-combo.jpg" class="vendor-photo" />
-        <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">
+        <img src="../static/garden-combo.jpg" class="vendor-photo" /><br><br>
+        <h2>Cacti, succulent, and garden combo in handcrafted pots. 
+        </h2><br>
+        <i class="h3 text-danger">$34.99</i><br><br>
+        <button class="vendor-book-button btn btn-lg btn-primary" type="submit" id="mp4">
           Add To Cart
-        </button>
-        <span><span id="mp4-added">0</span> in cart</span>
-        <p>Cacti, succulent, and garden combo in handcrafted pots. <i>$34.99</i>
-        </p>
+        </button><br>
+        <span class="h4"><span id="mp4-added">0</span> in cart</span>
       </div>
-
-      <div id="cart-wrapper">
-        <a onclick='navigateToCheckout()'>
-        <span id="cart" class="fa-stack fa-2x has-badge" data-count="0">
-          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-          <i class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
-        </span> CART
-      </a>
-      </div>
+      
     </div>
 
+    
     <!-- DO NOT EDIT below this line!! -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>

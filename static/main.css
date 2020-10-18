@@ -32,8 +32,10 @@ header {
 }
 
 .content-pane {
-  display: flex;
   padding: 40px;
+}
+
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
